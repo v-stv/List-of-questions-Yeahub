@@ -1,6 +1,12 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-css-modules"],
-  "rules": {
-    "selector-class-pattern": null
-  }
+    "extends": ["stylelint-config-standard", "stylelint-config-css-modules"],
+    "rules": {
+        "selector-class-pattern": null,
+        "custom-property-pattern": [
+            "^(?:[a-z][a-z0-9]*(-[a-z0-9]+)*|[a-z][a-zA-Z0-9]+)$",
+            {
+                "message": "Expected custom property name to be kebab-case or camelCase"
+            }
+        ]
+    }
 }

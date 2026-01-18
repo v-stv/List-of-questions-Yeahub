@@ -1,16 +1,20 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
+import svgr from 'vite-plugin-svgr'
 
 // https://vite.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, './src'),
+        },
     },
-  },
-  plugins: [react()],
-  css: {
-    postcss: './postcss.config.js',
-  },
-});
+    plugins: [react(), svgr()],
+    css: {
+        postcss: './postcss.config.js',
+    },
+    server: {
+        port: 3000,
+    },
+})

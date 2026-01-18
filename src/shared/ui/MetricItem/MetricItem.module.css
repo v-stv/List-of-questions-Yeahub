@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.value {
+    padding: 2px 4px;
+    background-color: #6a0bff;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    line-height: 1.2%;
+}

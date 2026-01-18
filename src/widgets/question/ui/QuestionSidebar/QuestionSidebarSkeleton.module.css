@@ -1,0 +1,21 @@
+.mb {
+    margin-bottom: 8px;
+}
+
+.metrics {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 24px;
+}
+
+.filter {
+    margin-top: 24px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 296px;
+}

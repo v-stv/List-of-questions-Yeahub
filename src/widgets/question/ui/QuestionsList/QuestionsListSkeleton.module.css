@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: #fff;
+    width: 804px;
+    border-radius: 24px;
+    padding: 20px 24px 40px;
+}
+
+.titleSkeleton {
+    height: 32px;
+    width: 200px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+    animation: shimmer 1.5s infinite;
+    border-bottom: #e8e8e8 solid 1px;
+    padding-bottom: 17px;
+    margin: 1px 0 24px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}

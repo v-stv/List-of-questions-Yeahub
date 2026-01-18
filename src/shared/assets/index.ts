@@ -1,0 +1,6 @@
+export { default as ArrowRight } from './icons/arrow-right.svg?react'
+export { default as Chevron } from './icons/chevron.svg?react'
+export { default as PaginationArrowLeft } from './icons/pagination-arrow-left.svg?react'
+export { default as PaginationArrowRight } from './icons/pagination-arrow-right.svg?react'
+export { default as Error } from './icons/error.svg?react'
+export { default as ArrowBack } from './icons/arrow-back.svg?react'

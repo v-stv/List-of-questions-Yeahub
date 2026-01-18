@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 50px;
+}

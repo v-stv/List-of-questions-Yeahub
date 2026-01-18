@@ -1,0 +1,35 @@
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #666;
+    font-size: 16px;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: #6a0bff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    border-radius: 8px;
+}
+
+.page:hover:not(.active) {
+    background-color: #f0e5ff;
+}
+
+.page.active {
+    background-color: #6a0bff;
+    color: white;
+    cursor: default;
+}

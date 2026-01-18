@@ -1,0 +1,2 @@
+// UI
+export { default as Pagination } from './ui/Pagination/Pagination'

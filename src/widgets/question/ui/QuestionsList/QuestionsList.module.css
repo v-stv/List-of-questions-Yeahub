@@ -1,0 +1,18 @@
+.wrapper {
+    background-color: #fff;
+    width: 804px;
+    border-radius: 24px;
+    padding: 20px 24px 40px;
+}
+
+.title {
+    display: block;
+    border-bottom: #e8e8e8 solid 1px;
+    padding-bottom: 17px;
+    margin: 1px 0 24px;
+}
+
+.list {
+    padding: 0;
+    list-style-type: disc;
+}

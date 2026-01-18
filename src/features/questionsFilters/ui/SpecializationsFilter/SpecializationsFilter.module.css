@@ -1,0 +1,13 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #6a0bff;
+    transition: text-decoration 0.2s;
+}
+
+.button:hover {
+    text-decoration: underline;
+}

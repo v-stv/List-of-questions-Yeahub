@@ -1,5 +1,5 @@
 export default {
-    '*.{ts,tsx}': ['eslint --fix', 'prettier --write'],
-    '*.css': ['stylelint --fix', 'prettier --write'],
-    '*.{json,md}': ['prettier --write'],
-};
+  '*.{ts,tsx}': ['eslint --fix', 'prettier --write --semi false'],
+  '*.{css,scss}': ['stylelint --fix', 'prettier --write'],
+  '*.{json,md}': ['prettier --write'],
+}

@@ -1,0 +1,95 @@
+.listItem {
+    list-style-type: none;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.listItem:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0;
+}
+
+.itemButton {
+    position: relative;
+    padding-left: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.itemButton::before {
+    content: '';
+    background-image: url('/src/shared/assets/icons/ellipse.svg');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.chevron {
+    color: #6a0bff;
+    margin-left: auto;
+    transition: transform 0.5s ease;
+}
+
+.chevronOpen {
+    transform: rotate(-180deg);
+}
+
+.content {
+    font-size: 16px;
+    color: #666;
+    padding-left: 24px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition:
+        max-height 0.5s ease,
+        opacity 0.3s ease 0.1s,
+        transform 0.4s ease 0.05s,
+        margin-bottom 0.5s ease;
+}
+
+.content.open {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+p {
+    margin: 0;
+    color: #303030;
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 130%;
+    color: #474747;
+    margin: 0 0 24px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+    color: #6a0bff;
+    margin-bottom: 16px;
+}

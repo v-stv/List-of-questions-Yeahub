@@ -1,0 +1,10 @@
+.menu_link {
+    margin: 0;
+    color: black;
+}
+
+.menu_link:hover {
+    color: #53f;
+    background-color: #f4f4f4;
+    transition-duration: 0.25s;
+}

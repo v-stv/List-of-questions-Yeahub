@@ -1,0 +1,133 @@
+.title {
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
+
+.text {
+    margin-bottom: 8px;
+}
+
+.short_answer {
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 120%;
+}
+
+.p {
+    color: #303030;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+/* упп */
+
+.text_container {
+    position: relative;
+    max-height: 785px; /* Высота до обрезания */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 24px;
+
+    /* Добавляем отступ внизу для кнопки */
+    padding-bottom: 48px;
+}
+
+.text_container.expanded {
+    max-height: none; /* Убираем ограничение при расширении */
+}
+
+.text_content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+/* Градиент для плавного перехода в конце текста */
+.text_container:not(.expanded)::after {
+    content: '';
+    position: absolute;
+    bottom: 40px; /* Учитываем высоту кнопки */
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, white);
+    pointer-events: none;
+}
+
+/* Кнопка внутри контейнера */
+.expand_button {
+    position: absolute;
+    bottom: 16px;
+    left: 24px;
+    background: none;
+    border: none;
+    color: #6a0bff;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    z-index: 1;
+}
+
+.expand_button:hover {
+    color: #5a0adf;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.container_back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.question_rating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.question_rating_number {
+    padding: 2px 4px;
+    background-color: #6a0bff;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    line-height: 1.2%;
+}
+
+.question_rating_container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 24px;
+}

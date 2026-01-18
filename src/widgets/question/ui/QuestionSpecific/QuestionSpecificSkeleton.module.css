@@ -1,0 +1,37 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 24px;
+    width: 1216px;
+    max-width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.article {
+    flex: 1;
+}
+
+.sidebar {
+    position: sticky;
+    top: 20px;
+    min-width: 392px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 24px;
+    padding: 20px;
+}
